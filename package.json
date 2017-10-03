@@ -1,0 +1,52 @@
+{
+    "name": "tumblr-themes",
+    "version": "0.0.0",
+    "description": "My Tumblr Themes",
+    "license": "MIT",
+    "repository": "omgimalexis/tumblr-themes",
+    "author": {
+        "name": "Alexis Tyler",
+        "email": "xo@wvvw.me",
+        "url": "wvvw.me"
+    },
+    "engines": {
+        "node": ">=4"
+    },
+    "scripts": {
+        "test": "xo && nyc ava"
+    },
+    "files": [
+        "index.js"
+    ],
+    "keywords": [
+    ],
+    "dependencies": {},
+    "devDependencies": {
+        "ava": "^0.19.1",
+        "coveralls": "^2.13.1",
+        "nyc": "^10.3.2",
+        "xo": "^0.18.2"
+    },
+    "nyc": {
+        "reporter": [
+            "lcov",
+            "text"
+        ]
+    },
+    "xo": {
+        "space": 4,
+        "rules": {
+            "space-before-function-paren": [
+                "error",
+                "never"
+            ]
+        },
+        "envs": [
+            "node",
+            "es6"
+        ]
+    },
+    "ava": {
+        "babel": "inherit"
+    }
+}
